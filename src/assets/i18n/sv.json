@@ -1,0 +1,53 @@
+{
+    "homeSlider":{
+        "first":"Välkommen till",
+        "firstt":"valU Städvård",
+        "Watch our service":"Se vår tjänst",
+        "next":"Utforska kategorin och välj tjänst idag",
+        "About":"Om valU Cleaning Care",
+        "Latest Service":"Senaste tjänsten",
+        "allser":"Se Alla tjänster",
+        "step":"4 steg kvar",
+        "why":"Varför välja oss",
+        "step1":"Betrodd",
+        "step11":"tror på vår service och omsorg",
+        "step2":"Support dygnet runt",
+        "step22":"I tjänst 24 timmar om dygnet",
+        "step3":"Lätt finansiering",
+        "step4":"Omfattande rengöring",
+        "Company":"Visa företag",
+        "FAQ":"FAQ",
+        "FAQQ":"Om du vill veta vanliga frågor",
+        "Filter Choose Category":"Filter Välj kategori",
+        "Contact Now":"Kontakta nu",
+        "sendcontact":"Ditt meddelande har skickats",
+        "errorcontact":"Vänligen ange giltig data!",
+        "sendcontactlast":"Skicka meddelande nu",
+        "Show All Category":"Visa alla kategorier"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    },
+    "nav":{
+        "home":"Hem",
+        "Service":"Service",
+        "About":"Handla om",
+        "Contact Us":"Kontakta oss",
+        "login":"Logga in",
+        "Logout":"Logga ut",
+        "Go Top":"Gå till toppen"
+        }
+}

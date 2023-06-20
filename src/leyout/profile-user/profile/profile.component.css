@@ -1,0 +1,13 @@
+.homec-hero {
+  position: relative;
+  min-height:400px !important;
+}
+@media only screen and (max-width: 767px){
+  .scrollToTop {
+        right: 580px !important;
+  }
+  }
+
+  .scrollToTop {
+right: auto !important;
+  }

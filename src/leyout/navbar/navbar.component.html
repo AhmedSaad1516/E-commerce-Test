@@ -1,0 +1,58 @@
+  
+<header class="header">
+  <div class="header__top">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-6 col-md-6">
+                  <div class="header__top__left">
+                  
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                  <div class="header__top__right">
+                  
+                     
+                      <div class="header__top__right__auth">
+                        <a *ngIf="tokens == null"routerLink="/login"><i class="fa fa-user"></i> Login</a>
+
+                          <a *ngIf="tokens !== null" (click)="logout()"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="header__logo">
+                  <a href="./index.html"><img src="img/logo.png" alt=""></a>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <nav class="header__menu">
+                  <ul>
+                      <li class="active"><a routerLink="/home">Home</a></li>
+                      
+                   
+                  </ul>
+              </nav>
+          </div>
+          <div class="col-lg-3">
+              <div class="header__cart">
+                  <ul>
+                      <li><a routerLink="/cart"><i class="fa fa-shopping-bag"></i> <span>{{carts.length}}</span></a></li>
+                  </ul>
+             
+              </div>
+          </div>
+      </div>
+      <div class="humberger__open">
+          <i class="fa fa-bars"></i>
+      </div>
+  </div>
+</header>
+    
+    <router-outlet (activate)="onActive()"></router-outlet>
+    <app-footer></app-footer>
+

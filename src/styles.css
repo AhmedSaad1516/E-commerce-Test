@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;    
+}
+#pre-loader {
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden !important;
+    right: 0px;
+    z-index: 999999; }
+    #pre-loader img {
+      text-align: center;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      z-index: 99;
+      margin: 0 auto; }
+
+
+      label.star {
+        float: right;
+        padding: 10px;
+        font-size: 36px;
+        color:red;
+        transition: all .2s;
+        font-size: 15px !important;
+    }
+
+    @media (max-width: 1199px){
+    .menu {
+        display: none !important;
+    }
+  }
+
+  .show{
+    display:inline !important;
+  }
+
+
+
+
+
+  .modal-backdrop.show {
+    opacity: -1.5 !important;
+  }

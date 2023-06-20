@@ -1,0 +1,81 @@
+
+
+  <div *ngIf="loader" id="preloder" >
+    <div class="loader" ></div>
+</div>
+<!-- home slider -->
+
+<section class="hero">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="hero__categories">
+                <div >
+                  <select  (change)="select($event)" class="hero__categories__all">
+                    <i class="fa-solid fa-bars"></i>
+                      <span >Category</span>
+                      <i  (click)="open()" *ngIf="show"style="    margin-left: 6px; " class="fa-solid fa-chevron-down"></i>
+                      <i (click)="openn()" *ngIf="showw" style="    margin-left: 6px; " class="fa-solid fa-chevron-up"></i>
+                      <option value="all" selected >All</option>
+    
+                      <option  *ngFor="let itemm of cat" value="{{itemm}}">{{itemm}}</option>
+                    </select>
+
+                </div>
+             
+                  <!-- <ul  (change)="select($event)"x *ngIf="show">
+                      <li  (change)="select($event)" *ngFor="let itemm of cat">
+                        <a (change)="select($event)">{{itemm}}</a>
+                      </li>
+               
+                  </ul> -->
+              </div>
+          </div>
+          <div class="col-lg-9">
+            <section class="featured spad">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <div class="section-title">
+                              <h2> Product</h2>
+                          </div>
+                     
+                      </div>
+                  </div>
+                  <div class="row featured__filter" id="MixItUp66C088">
+                 
+                      <div *ngFor="let item of all"  class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                        <app-show [data]="item" (item)="addToCart($event)"></app-show>
+                      </div>
+                  </div>
+              </div>
+            </section>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+                

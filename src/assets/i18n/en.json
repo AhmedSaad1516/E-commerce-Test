@@ -1,0 +1,46 @@
+{
+    "homeSlider":{
+        "first":"Welcome to valU ",
+        "firstt":"Cleaning Care",
+        "Watch our service":"Watch our service",
+        "next":"Explore category and choose service Today",
+        "About":"About valU Cleaning Care",
+        "Latest Service":"Latest Service",
+        "allser":"See All Services",
+        "step":"4 step to go",
+        "why":"Why Choose us",
+         "step1":"Trusted",
+         "step11":"believe in our service & Care",
+         "step2":"24/7 Support",
+         "step22":"In service 24 hours a day",
+         "step3":"Financing Easy",
+         "step4":"Extensive cleaning",
+         "Company":"Show Company",
+         "FAQ":"FAQ",
+         "FAQQ":"If you want to know Frequently Asked Questions",
+          "Filter Choose Category":"Filter Choose Category",
+          "Contact Now":"Contact Now",
+          "sendcontact":"Your message was sent successfully",
+          "errorcontact":"Please enter valid data!",
+          "sendcontactlast":"Send Message Now",
+          "Show All Category":"Show All Category"
+ 
+
+
+        
+    },
+    "nav":{
+    "home":"Home",
+    "Service":"Service",
+    "About":"About",
+    "Contact Us":"Contact Us",
+    "login":"login",
+    "Logout":"Logout",
+    "Go Top":"Go Top"
+    },
+
+    "footer":{
+
+    
+}
+}

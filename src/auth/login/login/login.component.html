@@ -1,0 +1,90 @@
+
+
+<div *ngIf="loader" id="preloder" >
+    <div class="loader" ></div>
+  </div>
+    <section class="ecom-wc ecom-wc__full ecom-bg-cover" style="background-image: url('../../../assets/img/credential-bg.svg');">
+        <div class="container-fluid">
+        <div class="row">
+            
+   
+        <div class="col-lg-6 col-12 d-none d-lg-block ">
+        <div class="ecom-wc__inner homec-bg-cover" style="background-image: url('../../../assets/img/welcome-bg.svg');">
+        
+        <div class="ecom-wc__logo">
+       
+        </div>
+        <div class="ecom-wc__inside">
+        
+        <div class="ecom-wc__middle">
+        <a ><img src="../../../assets/imgs/492 - 492 ValuClean 01 (1).png" alt="#"></a>
+        <div class="ecom-wc__countdown--title">3 Years<span> High experience</span></div>
+        <div class="ecom-wc__countdown--title ecom-wc__countdown--title--v2">150k<span>High Quality</span></div>
+        </div>
+        <div class="ecom-wc__footer">
+        <ul class="ecom-wc__footer--list list-none">
+        <li><a >Terms &amp; Condition</a></li>
+        
+        <!-- <li><a href="#">Help</a></li> -->
+        </ul>
+        <!-- <div class="ecom-wc__footer--languages">
+        <select class="ecom-wc__footer--language select2-hidden-accessible" data-select2-id="select2-data-1-c82j" tabindex="-1" aria-hidden="true">
+        <option data-display="english" data-select2-id="select2-data-3-pwax">English</option>
+        <option value="2">Bengali</option>
+        <option value="3">Frances</option>
+        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-qpdv" style="width: 84.8px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-db4q-container" aria-controls="select2-db4q-container"><span class="select2-selection__rendered" id="select2-db4q-container" role="textbox" aria-readonly="true" title="English">English</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+        </div> -->
+        </div>
+       
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-6 col-12">
+            <div class="ecom-wc__form">
+            <div class="ecom-wc__form-inner">
+                <div *ngIf="errorLogin"  class="alert alert-danger" style="left: 73px;
+                width: 74%;" role="alert">
+username or password is incorrect                    
+<a style="text-align: center;" class="alert-link">try again</a>
+                  </div>
+                  <h3 class="ecom-wc__form-title ecom-wc__form-title__one" style="text-align: center;">Login Account <span> Welcome To E-commerce</span></h3>
+            
+            <form   [formGroup]="loginForm" class="ecom-wc__form-main p-0" action="index.html" method="post">
+            <div class="form-group homec-form-input">
+            <label class="ecom-wc__form-label mg-btm-10">Username*</label>
+            <div class="form-group__input">
+            <input formControlName="username" class="ecom-wc__form-input" type="text" name="email" placeholder="demo3243@gmail.com" required="required">
+            </div>
+            </div>
+            
+            <div class="form-group homec-form-input">
+            <label class="ecom-wc__form-label mg-btm-10">Password*</label>
+            <div class="form-group__input">
+            <input [type]="changetype?'password':'text'" formControlName="password" class="ecom-wc__form-input" placeholder="●●●●●●" id="password-field" type="password" name="password" required="required">
+           
+            <span class="eyeicon" (click)="viewpass()">
+                <i style="font-size: 17px;"[ngClass]="visible?'fa fa-eye':'fa fa-eye-slash'"></i>
+              </span>
+        </div>
+            </div>
+            
+            <div class="form-group form-mg-top-30">
+            <div class="ecom-wc__button ecom-wc__button--bottom">
+            <button style="height: 33px;border-radius: 53px;" (click)="login()" [disabled]="loginForm.invalid" class="homec-btn homec-btn__second" type="submit"><span>Login</span></button>
+    
+        </div>
+            </div>
+            
+            <div class="form-group mg-top-20">
+            <div class="ecom-wc__bottom">
+            </div>
+            </div>
+            </form>
+            
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        </section>
+  

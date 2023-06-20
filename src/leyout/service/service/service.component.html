@@ -1,0 +1,78 @@
+<div *ngIf="loader" id="preloder" >
+  <div class="loader" ></div>
+</div>
+
+<section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg"
+  style="background-image: url(../../../assets/last/img/breadcrumb.jpg);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="breadcrumb__text">
+          <h2>Vegetable’s Package</h2>
+          <div class="breadcrumb__option">
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Vegetables</a>
+            <span>Vegetable’s Package</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="product-details spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="product__details__pic">
+          <div class="product__details__pic__item">
+            <img class="product__details__pic__item--large" [src]="all.image" alt="">
+          </div>
+          <div class="product__details__pic__slider owl-carousel owl-loaded owl-drag">
+
+
+
+
+            <div class="owl-stage-outer">
+              <div class="owl-stage"
+               >
+                <div class="owl-item cloned" style="width: 123.75px; margin-right: 20px;"><img
+                 [src]="all.image" 
+                    alt=""></div>
+           
+              </div>
+              
+            </div>
+            
+            <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+                  aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                class="owl-next"><span aria-label="Next">›</span></button></div>
+            <div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="product__details__text">
+          <h3>{{all.category}}</h3>
+        
+          <div class="product__details__price">${{all.price}}</div>
+          <p>{{all.description}}</p>
+          <div class="product__details__quantity">
+            <div class="quantity">
+            
+            </div>
+          </div>
+          <a 
+          *ngIf="btn"
+          (click)="addToCart(all)" class="primary-btn">ADD TO CARD</a>
+          <a  class="heart-icon"></a>
+       
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<a style="cursor: pointer;" (click)="onActive()" class="scrollToTop show"><i
+    class="fa-solid fa-angle-right"></i></a>

@@ -1,0 +1,37 @@
+
+                  <div class="row featured__filter" id="MixItUp66C088">
+
+                        <div class="featured__item">
+                          <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg" style="background-image: url({{data.image}});">
+                              <ul class="featured__item__pic__hover">
+                                 
+                                
+                                  <li><a   *ngIf="!addbtn" (click)="addbtn = true"><i class="fa fa-shopping-cart"></i>
+                               
+                                  </a>
+                                  <td *ngIf="addbtn" class="shoping__cart__quantity">
+                                    <div class="quantity">
+                                        <div class="pro-qty">
+                                         
+                                            <input type="number" [(ngModel)]="ammount">
+                                        <!-- <span class="inc qtybtn">+</span> -->
+                                        <button style="background-color:  #7fad39; color: #000;" (click)="addToCart();addbtn = false"> Add To Cart </button>
+                                      </div>
+                                    </div>
+                                </td>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="featured__item__text">
+                              <h6><a routerLink="/details/{{data.id}}">{{data.description}}</a></h6>
+                              <h5>${{data.price}}</h5>
+                            
+                        
+                          </div>
+                      </div>
+                  
+                
+              </div>
+ 
+
+
