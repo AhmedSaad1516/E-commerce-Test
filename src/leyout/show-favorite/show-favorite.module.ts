@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { ShowFavoriteRoutingModule } from './show-favorite-routing.module';
 import { ShowComponent } from './show/show.component';
-import { NgxStarRatingModule } from 'ngx-star-rating';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,9 +10,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    ShowFavoriteRoutingModule,
-    NgxStarRatingModule,
-    FormsModule
+    ShowFavoriteRoutingModule
   ]
 })
 export class ShowFavoriteModule { }

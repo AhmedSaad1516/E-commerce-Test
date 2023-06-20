@@ -1,7 +1,5 @@
 import { Component,EventEmitter,Input,Output } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { ToastrService } from 'ngx-toastr';
-import { UserServiceService } from 'src/auth/service/user-service.service';
+
 
 @Component({
   selector: 'app-show',
@@ -13,8 +11,7 @@ export class ShowComponent {
 @Output() item = new EventEmitter
 addbtn:boolean=false
 ammount:number=0
-  constructor(private serv :UserServiceService ,public matDialog: MatDialog,
-    private tostor:ToastrService){
+  constructor(){
 
   }
 

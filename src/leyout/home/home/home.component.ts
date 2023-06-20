@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { UserServiceService } from 'src/auth/service/user-service.service';
-import Pusher from 'pusher-js';
-import { HttpClient } from '@angular/common/http';
-
-import { DomSanitizer } from '@angular/platform-browser';
-import * as RecordRTC from 'recordrtc';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 @Component({

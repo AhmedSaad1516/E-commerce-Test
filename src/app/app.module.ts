@@ -6,17 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { AuthModule } from 'src/auth/auth.module';
 import { ToastrModule } from 'ngx-toastr';
 import { LoginModule } from 'src/auth/login/login.module';
 import { CoreModule } from 'src/core/core.module';
-import { HomeModule } from 'src/leyout/home/home.module';
-import { ForgetpasswordModule } from 'src/auth/forgetpassword/forgetpassword.module';
 import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { HttpClient } from '@angular/common/http';
-
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
@@ -41,12 +37,9 @@ import { InterceptorErrorModule } from 'src/interceptor-error/interceptor-error.
     NgxStarRatingModule,
     ToastrModule.forRoot(),
     CoreModule,
-     AuthModule,
     LoginModule, 
     NgxPaginationModule,
     NgxMaterialTimepickerModule,
-    ForgetpasswordModule,
-     
     InterceptorErrorModule,
     TranslateModule.forRoot({
       defaultLanguage:'en',
